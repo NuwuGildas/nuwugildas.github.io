@@ -8,9 +8,9 @@
     --secondaryDarkColor:#302b70;
     --lightShadowGrey:#0000003b;
     
-    --toggleHeight: 16em;
-    --toggleWidth: 30em;
-    --toggleBtnRadius: 10em;
+    --toggleHeight: 30px;/*16em*/
+    --toggleWidth: 55px;/* 30em;*/
+    --toggleBtnRadius: 20px; /*10em;*/
   
     --bgColor--night: #132540;/*#423966;*/
     /* --toggleBtn-bgColor--night: var(--bgColor--night); */
