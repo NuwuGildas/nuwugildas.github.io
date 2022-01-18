@@ -556,9 +556,9 @@ input.form_input_Dark::-webkit-input-placeholder {
     font-size: 12%;
     margin-left: 4em;
     position: fixed;
-    height: var(--toggleHeight);
-    width: var(--toggleWidth);
-    border-radius: var(--toggleHeight);
+    height: 30px;
+    width: 55px;
+    border-radius: 30px;
     transition: all 500ms ease-in-out;
     background: var(--mainDarkColor);
     z-index:999;
@@ -571,12 +571,11 @@ input.form_input_Dark::-webkit-input-placeholder {
     display: block;
     border-radius: 50%;
     transition: all 400ms ease-in-out;
-
-    top: 3em;
-    left: 3em;
+    top: 5px;
+    left: 5px;
     transform: rotate(-75deg);
-    width: var(--toggleBtnRadius);
-    height: var(--toggleBtnRadius);
+    width: 20px;
+    height: 20px;
     background: var(--mainDarkColor);
     box-shadow: 
         3em 2.5em 0 0em var(--mooncolor) inset,
@@ -595,11 +594,11 @@ input.form_input_Dark::-webkit-input-placeholder {
     position: absolute;
     display: block;
     border-radius: 50%;
-    top: 4em;
-    left: 18em;
+    top: 8px;
+    left: 35px;
     transform: rotate(0deg);
-    width: 7em;
-    height: 7em;
+    width: 14px;
+    height: 14px;
     background: var(--mainDarkColor);
     transition: all 400ms ease-in-out;
     box-shadow: 3em 3em 0 5em var(--mainDarkColor) inset,
