@@ -551,10 +551,10 @@ input.form_input_Dark::-webkit-input-placeholder {
 }
 
 .tdnn {
-    margin: 10px auto;
+    margin: 5px auto;
     /*change size of toggle with font-size*/
     font-size: 12%;
-    margin-left: 10px;
+    margin-left: 5px;
     position: fixed;
     height: 30px;
     width: 55px;
