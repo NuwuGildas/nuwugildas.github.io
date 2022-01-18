@@ -4,6 +4,14 @@ import data from '../../data.json'
 import { string } from 'prop-types';
 
 function Modal(props) {
+  if (!(props.modalState == '0')) {
+    // Disable scroll
+    console.log(document.getElementsByTagName("BODY")[0]);
+    document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+  } else {
+    // Enable scroll
+    document.getElementsByTagName("BODY")[0].style.overflow = "scroll";
+  }
   const item = data.filter((item)=>{
     /* console.log(item.id === props.contentIndex); */
     return item.id === props.contentIndex;
