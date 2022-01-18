@@ -38,3 +38,7 @@ body.dark {
     --color:  var(--mainClearColor);
     --background: var(--mainDarkColor);
 }
+/* 
+    *****   git push -f origin master
+    *****   https://www.neonscience.org/resources/learning-hub/tutorials/git-setup-remote
+ */
