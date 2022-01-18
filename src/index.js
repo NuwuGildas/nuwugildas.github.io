@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import WelcomePage from './components/welcome/welcome.js';
+/* import Modal from './components/modal/modal.js' */
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WelcomePage/>
+    {/* <Modal/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

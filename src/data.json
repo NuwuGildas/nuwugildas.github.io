@@ -1,0 +1,33 @@
+[
+    {   "id":"0",
+        "img":"/images/svg/group.svg",
+        "title":"Group Call",
+        "description":"a simple, relaible and effective way to connect ...",
+        "action":"start",
+        "action1":"cancel"
+    },
+    {   "id":"1",
+        "img":"/images/svg/peer.svg",
+        "title":"Peer to peer call",
+        "description":"a simple, relaible and effective way to connect ...",
+        "action":"start",
+        "action1":"cancel"
+    },
+    {
+        "id":"2",
+        "img":"/images/svg/chat.svg",
+        "title":"Chat",
+        "description":"a simple, relaible and effective way to connect ...",
+        "action":"start",
+        "action1":"cancel"
+    },
+    {
+        "id":"3",
+        "img":"/images/svg/conference.svg",
+        "title":"Conference",
+        "description":"a simple, relaible and effective way to connect ...",
+        "action":"start",
+        "action1":"cancel",
+        "action2":"invite"
+    }
+]

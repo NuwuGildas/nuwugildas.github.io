@@ -1,0 +1,105 @@
+.parent_Modal{
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top:100%;
+    left:0px;
+    bottom:0px;
+    z-index: 999;
+    background: #0d1626a6;
+    backdrop-filter: blur(20px);
+    opacity:0;
+    overflow: hidden;
+    visibility:hidden;
+    transition:all .5s;
+}
+.main_Modal{
+    position: relative;
+    border-radius: 5px;
+    background: var(--mainClearColor);
+    transition:all .5s linear;
+    /* box-shadow: 0px 0px 6px 0px #f0f2f657; */
+}
+.main_Modal_Dark{
+    background: var(--mainDarkColor);
+    transition:all .5s linear;
+}
+.main_Modal_size{
+    max-width: 60%;
+    height: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.parent_Modal.close {
+    right: 20px;
+}
+.parent_Modal.active {
+    display:block;
+    opacity:1;
+    visibility:visible;
+    top:0;
+    height:100%;
+}
+.modal_close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    opacity:0.5;
+    background: var(--mainDarkColor);
+    transition:all .5s;
+    z-index:999;
+}
+.modal_close > svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--mainClearColor);
+    transition:all .5s;
+    
+}
+.modal_close_Dark{
+    background: var(--mainClearColor);
+    transition:all .5s;
+}
+.modal_close_Dark > svg{
+    fill: var(--mainDarkColor);
+    transition:all .5s;
+}
+.modal_close:hover{
+    opacity:0.8;
+}
+
+.modal_content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.modal_content_left{
+    left:0;
+}
+.modal_title{
+    font-size: 4.3em;
+    font-weight: 900;
+}
+.modal_content_left>img{
+    width: 90%;
+    height: 50%;
+    margin-top: 25%;
+    margin-left:5%;
+}
+.modal_content_right{
+    right:0;
+    padding-top: 15%;
+    font-family: "Montserrat",sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .main_Modal_size{
+        max-width: 60%;
+        height: 80%;
+        margin: auto;
+        margin-top: 5%;
+    }
+}

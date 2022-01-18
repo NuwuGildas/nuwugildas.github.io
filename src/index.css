@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+:root{
+    --mainDarkColor:#132540;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    --mainClearColor:#f0f2f6;
+    --secondaryDarkColor:#302b70;
+    --lightShadowGrey:#0000003b;
+    
+    --toggleHeight: 16em;
+    --toggleWidth: 30em;
+    --toggleBtnRadius: 10em;
+  
+    --bgColor--night: #132540;/*#423966;*/
+    /* --toggleBtn-bgColor--night: var(--bgColor--night); */
+    --mooncolor: #D9FBFF;
+    /*--bgColor--day: #9ee3fb;
+     --toggleBtn-bgColor--day: var(--bgColor--day); */
+}
+body{
+    background:var(--mainClearColor);
+    color: var(--mainDarkColor);
+    /*background-image: linear-gradient(238deg,#f5b6b3,#6272fc); url('./bodyBackground.jpg'); */
+}
+#root{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+body.light {
+    --color:  var(--mainDarkColor);
+    --background: var(--mainClearColor);
+}
+body.dark {
+    --color:  var(--mainClearColor);
+    --background: var(--mainDarkColor);
 }
