@@ -21,7 +21,7 @@ function scrollToElement(e) {
 
 function animation(type) {
     // Some random colors
-    //return;
+    return;
     //if(type == 'light') return
 
     const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
@@ -133,13 +133,6 @@ function Welcome() {
                                     })
                                 }
                                 
-                                
-                               {/*  
-                                    <Cards Togglemodal={modalToggler} clickEvent={element.id} theme={theme} image={Group} name=' Group call' />
-                                    <Cards Togglemodal={modalToggler} clickEvent={"1"} theme={theme} image={Peer} name=' Peer to peer call' />
-                                    <Cards Togglemodal={modalToggler} clickEvent={"2"} theme={theme} image={Chat} name=' chat' />
-                                    <Cards Togglemodal={modalToggler} clickEvent={"3"} theme={theme} image={Conference} name='Conference'/> 
-                                */}
                             </div>
                         </div>
                     </div>

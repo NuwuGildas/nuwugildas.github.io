@@ -2,6 +2,15 @@ import React,{useState,useEffect} from 'react';
 import './modal.css';
 import data from '../../data.json'
 import { string } from 'prop-types';
+import {
+  BrowserRouter as Router, 
+  Routes, 
+  Route, 
+  Navigate,
+  Link,
+  useParams,
+  useNavigate
+} from "react-router-dom";
 
 function Modal(props) {
   if (!(props.modalState == '0')) {
@@ -16,6 +25,7 @@ function Modal(props) {
     /* console.log(item.id === props.contentIndex); */
     return item.id === props.contentIndex;
   })
+  const navigate = useNavigate();
   console.log(item[0]);
   return (
     <div className={`parent_Modal ${props.modalState == '0' ? 'close':'active'}`} >
@@ -30,8 +40,13 @@ function Modal(props) {
             <div className='modal_content modal_content_right'>
               <label className='modal_title'>{item[0].title}</label><br/>
               <label>{item[0].description}</label>
-              <button className={`btn_continue ${props.theme == 'light'? '':'btn_continue_dark'}`}>Continue <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/></svg></button>
-
+              <button onClick={
+                ()=>{
+                  // alert(`/features/ ${item[0].title}`);
+                  navigate(`/features/${item[0].title}`)
+                }
+              } 
+              className={`btn_continue ${props.theme == 'light'? '':'btn_continue_dark'}`}>Continue <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z"/></svg></button>
             </div>
           </>
         }

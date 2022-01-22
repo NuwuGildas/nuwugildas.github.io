@@ -99,6 +99,7 @@
     width: 80%;
     height: 50px;
     margin: 50px auto;
+    margin-left: 0px;
     font-size: 20px;
     border: none;
     background: var(--mainDarkColor);
@@ -145,4 +146,8 @@
         width: 100%;
         height: 50%;
     }
+    .btn_continue{
+        margin-left: 50px !important;
+    }
+    
 }
