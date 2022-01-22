@@ -22,6 +22,7 @@ ReactDOM.render(
           <Route path="/" element={<Navigate replace to="/welcome"/>} />
           <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/features/:feature" element={<ComingSoon/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </Router>,
   document.getElementById('root')
@@ -36,6 +37,20 @@ function ComingSoon() {
       <div className='coming_parent_img'>
         <img className='coming_img' src='/images/svg/coming_soon .svg'></img><br/>
         <label>Page under Construction</label>
+        <button onClick={()=>{navigate(-1)}} className='coming_btn'>go back</button>
+      </div>
+    </div>
+  )
+}
+function NotFound() {
+  const navigate = useNavigate();
+  const {feature} = useParams();
+  return(
+    <div className='coming_parent'>
+      {/* <div className='coming_msg'> {feature} is coming soon</div> */}
+      <div className='coming_parent_img'>
+        <img className='coming_img' src='/images/svg/coming_soon .svg'></img><br/>
+        <label>Ooops Page Not Found</label>
         <button onClick={()=>{navigate(-1)}} className='coming_btn'>go back</button>
       </div>
     </div>
